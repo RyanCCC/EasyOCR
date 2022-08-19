@@ -4,10 +4,11 @@
 
 ## 文字检测
 
+
 ## 方向检测
 
-## 文字识别
 
+## 文字识别
 
 
 ## 参考
@@ -19,6 +20,7 @@
 5. [OCRmyPDF](https://github.com/ocrmypdf/OCRmyPDF)
 6. [一文入门深度学习OCR：数据集和算法](https://zhuanlan.zhihu.com/p/356842725)
 7. [OCR DataSet](https://github.com/WenmuZhou/OCR_DataSet)
+8. [text-detection-ctpn](https://github.com/eragonruan/text-detection-ctpn)
 
 
 
