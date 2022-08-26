@@ -7,7 +7,7 @@ this_dir = os.path.dirname(__file__)
 
 from network.fast_rcnn.train import get_training_roidb, train_net
 from network.fast_rcnn.config import cfg_from_file, get_output_dir, get_log_dir
-from dataset.factory import get_imdb
+from dataloader.factory import get_imdb
 from network.factory import get_network
 from network.fast_rcnn.config import cfg
 
