@@ -4,6 +4,11 @@
 
 ## 文字检测
 
+### [CTPN算法](./doc/CTPN_Detection.py)
+
+
+
+
 
 ## 方向检测
 
