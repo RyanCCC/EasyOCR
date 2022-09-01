@@ -3,12 +3,12 @@ import sys
 import cv2
 import numpy as np
 import tensorflow as tf
-from lib.utils.timer import Timer
-from lib.fast_rcnn.config import cfg
-from lib.fast_rcnn.test import  test_ctpn
-from lib.networks.factory import get_network
-from lib.text_connector.detectors import TextDetector
-from lib.text_connector.text_connect_cfg import Config as TextLineCfg
+from utils.timer import Timer
+from network.fast_rcnn.config import cfg
+from network.fast_rcnn.test import  test_ctpn
+from network.factory import get_network
+from network.text_connector.detectors import TextDetector
+from network.text_connector.text_connect_cfg import Config as TextLineCfg
 
 
 def resize_im(im, scale, max_scale=None):
@@ -93,7 +93,7 @@ def text_detect(img):
 
 if __name__ == '__main__':
     from PIL import Image
-    from lib.fast_rcnn.config import cfg_from_file
+    from network.fast_rcnn.config import cfg_from_file
     cfg_from_file('./ctpn/ctpn/text.yml')
     im = Image.open('./test_images/1.jpg')
     img = np.array(im.convert('RGB'))
