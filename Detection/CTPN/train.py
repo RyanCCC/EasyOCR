@@ -32,6 +32,7 @@ if __name__ == '__main__':
     train_net(network, imdb, roidb,
               output_dir=output_dir,
               log_dir=log_dir,
-              pretrained_model='./checkpoints/checkpoints_voc2007/checkpoint',
+              pretrained_model='./checkpoints/checkpoints_mlt/ctpn_50000.ckpt',
               max_iters=int(cfg.TRAIN.max_steps),
               restore=bool(int(cfg.TRAIN.restore)))
+ 
