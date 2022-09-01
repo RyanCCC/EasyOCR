@@ -1,6 +1,6 @@
 # OCR
 
-站在巨人的肩膀上实现OCR。所谓的巨人都在参考当中，详细的可以参考当中的仓库。
+站在巨人的肩膀上实现OCR。巨人都放在参考一节当中。
 
 ## 文字检测
 
@@ -32,6 +32,7 @@
 3. [OCRmyPDF](https://github.com/ocrmypdf/OCRmyPDF)
 4. [一文入门深度学习OCR：数据集和算法](https://zhuanlan.zhihu.com/p/356842725)
 5. [OCR DataSet](https://github.com/WenmuZhou/OCR_DataSet)
+6. [OCR数据集](./doc/OCR%E6%95%B0%E6%8D%AE%E9%9B%86.md)
 
 
 
