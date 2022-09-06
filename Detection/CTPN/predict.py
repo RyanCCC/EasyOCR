@@ -19,7 +19,7 @@ def resize_im(im, scale, max_scale=None):
 
 def load_tf_model():
     # load config file
-    cfg.TEST.checkpoints_path = './ctpn/checkpoints'
+    cfg.TEST.checkpoints_path = './checkpoints/voc_2007_trainval/VGGnet_fast_rcnn_iter_50000.ckpt'
 
     # init session
     gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=1.0)
@@ -33,12 +33,12 @@ def load_tf_model():
     print('Loading network {:s}... '.format("VGGnet_test"))
     saver = tf.train.Saver()
     try:
-        ckpt = tf.train.get_checkpoint_state(cfg.TEST.checkpoints_path)
-        print('Restoring from {}...'.format(ckpt.model_checkpoint_path))
-        saver.restore(sess, ckpt.model_checkpoint_path)
+        # ckpt = tf.train.get_checkpoint_state(cfg.TEST.checkpoints_path)
+        print('Restoring from {}...'.format(cfg.TEST.checkpoints_path))
+        saver.restore(sess, cfg.TEST.checkpoints_path)
         print('done')
     except:
-        raise 'Check your pretrained {:s}'.format(ckpt.model_checkpoint_path)
+        raise 'Check your pretrained {:s}'.format(cfg.TEST.checkpoints_path)
 
     return sess, net
 
@@ -94,8 +94,8 @@ def text_detect(img):
 if __name__ == '__main__':
     from PIL import Image
     from network.fast_rcnn.config import cfg_from_file
-    cfg_from_file('./ctpn/ctpn/text.yml')
-    im = Image.open('./test_images/1.jpg')
+    cfg_from_file('./train.yml')
+    im = Image.open('../datasets/mlt/image/100_icdar13.png')
     img = np.array(im.convert('RGB'))
     text_recs, img_drawed, img = text_detect(img)
     Image.fromarray(img_drawed).save('result.jpg')
