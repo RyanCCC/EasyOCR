@@ -4,9 +4,9 @@
 
 ## 文字检测
 
-1. [CTPN算法](./doc/CTPN_Detection.md)
+1. [CTPN算法](./doc/CTPN_Detection.md)，[Code](./Detection/CTPN/train.py)
 
-2. [EAST算法](./doc/EAST_Detection.md)
+2. [EAST算法](./doc/EAST_Detection.md)，[Code](./Detection/EAST/ReadMe.md)
 
 
 
