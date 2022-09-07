@@ -9,6 +9,7 @@ from network.fast_rcnn.test import  test_ctpn
 from network.factory import get_network
 from network.text_connector.detectors import TextDetector
 from network.text_connector.text_connect_cfg import Config as TextLineCfg
+sys.setrecursionlimit(1500)
 
 
 def resize_im(im, scale, max_scale=None):
@@ -95,7 +96,7 @@ if __name__ == '__main__':
     from PIL import Image
     from network.fast_rcnn.config import cfg_from_file
     cfg_from_file('./train.yml')
-    im = Image.open('../datasets/mlt/image/100_icdar13.png')
+    im = Image.open('../datasets/VOC2007/JPEGImages/img_1008.jpg')
     img = np.array(im.convert('RGB'))
     text_recs, img_drawed, img = text_detect(img)
     Image.fromarray(img_drawed).save('result.jpg')
