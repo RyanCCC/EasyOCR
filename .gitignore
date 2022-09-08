@@ -135,3 +135,5 @@ checkpoints
 *.pkl
 
 logs/
+
+model/
