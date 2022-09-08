@@ -8,6 +8,8 @@
 
 2. [EAST算法](./doc/EAST_Detection.md)，[Code](./Detection/EAST/ReadMe.md)
 
+3. [DB]()
+
 
 
 #### 参考
@@ -26,6 +28,29 @@
 
 ## 文字识别
 
+1. [CRNN]()
+
+
+
+## 端到端算法
+
+1. [PGNet](https://github.com/PaddlePaddle/PaddleOCR/blob/release/2.6/doc/doc_ch/algorithm_e2e_pgnet.md)
+
+
+## 表格识别算法
+
+1. [TableMASTER](https://github.com/PaddlePaddle/PaddleOCR/blob/release/2.6/doc/doc_ch/algorithm_table_master.md)
+
+
+## 关键信息抽取算法
+
+1. [VI-LayoutXLM](https://github.com/PaddlePaddle/PaddleOCR/blob/release/2.6/doc/doc_ch/algorithm_kie_vi_layoutxlm.md)
+2. [LayoutXLM](https://github.com/PaddlePaddle/PaddleOCR/blob/release/2.6/doc/doc_ch/algorithm_kie_layoutxlm.md)
+3. [SDMGR](https://github.com/PaddlePaddle/PaddleOCR/blob/release/2.6/doc/doc_ch/algorithm_kie_sdmgr.md)
+
+## 数据集
+
+请参考：[OCR数据集](./doc/OCR%E6%95%B0%E6%8D%AE%E9%9B%86.md)
 
 ## 参考
 
