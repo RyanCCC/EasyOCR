@@ -1,5 +1,6 @@
 # CRNN - TensorFlow 2
 
+参考：https://github.com/FLming/CRNN.tf2
 
 This is a re-implementation of the CRNN network, build by TensorFlow 2. This repository may help you to understand how to build an End-to-End text recognition network easily. Here is the official [repo](https://github.com/bgshih/crnn) implemented by [bgshih](https://github.com/bgshih).
 
